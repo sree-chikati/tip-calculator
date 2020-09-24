@@ -1,8 +1,10 @@
+const displayTip = document.querySelector('#display-tip')
+const displayTotal = document.querySelector('#display-total')
+const peopleTotal = document.querySelector('#people-total')
 const billInput = document.querySelector('#bill')
 const tipInput = document.querySelector('#tip')
 const peopleInput = document.querySelector('#people')
-const displayTip = document.querySelector('#tip')
-const displayTotal = document.querySelector('#total')
+
 
 billInput.addEventListener('input', handleBill)
 tipInput.addEventListener('input', handleBill)
@@ -10,14 +12,15 @@ peopleInput.addEventListener('input', handleBill)
 
 function handleBill() {
     const billValue = billInput.value
-    const tipValue = tipInput.value
-    
-    const percent = paresInt(tipInput.value)
+    const tipValue = parseFloat(tipInput.value)
+    const peopleValue = parseInt(peopleInput.value)
 
-    const tip = bill * percent / 100
-    const total = bill + tip
+    const tip = billValue * tipValue / 100
+    const total = billValue + tip
+    const peopleBill = billValue / peopleValue
 
-    displayTip.innerHTML = tip    
-    
+    displayTip.innerHTML = tip
+    displayTotal.innerHTML = total  
+    peopleTotal.innerHTML = peopleBill
 }
 handleBill()
