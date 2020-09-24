@@ -19,11 +19,12 @@ function handleBill() {
     const tip = billValue * tipValue / 100
     const tipPeople = tip / peopleValue
     const total = parseInt(billValue) + tip
-    const peopleBill = billValue / peopleValue
+    const peopleBill = parseFloat(total/ peopleValue)
 
     displayTip.innerHTML = tip
     displayTotal.innerHTML = total  
     peopleTotal.innerHTML = peopleBill
     peopleTip.innerHTML = tipPeople
+
 }
-handleBill()
+

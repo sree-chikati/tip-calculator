@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <title>Tip Calculator</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
 <body>
 
     <main>
         <h1>Tip Calculator</h1>
-        <div id="display-tip">0.00</div>
-        <div id ="people-tip"> 0.00</div>
-        <div id ="display-total"> 0.00</div>
-        <div id ="people-total"> 0.00</div>
-        <input id="bill" value="10.00" type = "number"> 
-        <input id="tip" value="15" type = "number">
-        <input id="people" value="2" type = "number">
+        <div class = "bill-amount">
+            <div>Bill amount: $</div>
+            <input id="bill" 
+            value="10.00" 
+            type = "number"
+            class = "bill-amount"> 
+        </div>
+        <br>
+
+        <div class = "tip-amount">
+            <div>Tip Percentage: </div>
+            <input id="tip"
+            value="15"
+            type = "number"
+            class = "tip-amount">
+            <div>%</div>
+        </div>
+        <br>
+
+        <div class = num-people>
+            <div>Number of People: </div>
+            <input id="people"
+            value="2"
+            type = "number"
+            class = "num-people">
+        </div>
+        <br>
+
+        <input type="button" id="calculate" value="Calculate" onclick="handleBill()">
+        <br>
+
+        <div class = "final-tip">
+            <div>Tip amount: $</div>
+            <div id="display-tip">0.00</div>
+        </div>
+        <br>
+
+        <div class = "final-people-tip">
+            <div>Tip per Person: $</div>
+            <div id ="people-tip"> 0.00</div>
+        </div>
+        <br>
+
+        <div class = "final-total">
+            <div>Total Amount: $</div>
+            <div id ="display-total"> 0.00</div>
+        </div>
+        <br>
+
+        <div class = "final-people-total">
+            <div>Total per person: $</div>
+            <div id ="people-total"> 0.00</div>
+        </div>
+
     </main>
 
 <script src="script.js"></script>

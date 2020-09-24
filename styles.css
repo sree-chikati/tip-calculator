@@ -1,0 +1,26 @@
+body{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: whitesmoke;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+div{
+    margin: none;
+    padding: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.final{
+    background-color: cornflowerblue;
+}
+
