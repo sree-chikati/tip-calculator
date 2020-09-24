@@ -1,0 +1,5 @@
+const billInput = document.querySelector('#input-bill')
+const tipInput = document.querySelector('#input-tip')
+const tipInput = document.querySelector('#input-people')
+const display = document.querySelector('#display-tip')
+const display = document.querySelector('#display-total')
