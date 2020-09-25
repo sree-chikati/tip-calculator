@@ -8,7 +8,7 @@ font-family: 'Sacramento', cursive;
 */
 
 body{
-    background-color: tomato;
+    background-color: rgb(61, 177, 57);
     display: flex;
     justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
@@ -25,8 +25,7 @@ main{
 }
 
 div{
-    margin: none;
-    padding: none;
+    margin: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,23 +33,41 @@ div{
 }
 #bill, #tip, #people{
     text-align: center;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.final-tip:hover, 
+.final-people-tip:hover,
+.final-total:hover, 
+.final-people-total:hover {
+    font-size: 2rem;
+    color: green;
 }
 
 #final{
+    font-size: 1.5rem;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    display: none;
     padding: 0.5rem 1rem;
     margin: 1rem;
+    background-color:gold;
+    border-radius: 0.5rem;
 }
 
 #calculate{
     margin: 1rem;
     padding: 0.5rem 1rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: 0.5rem;
+}
+
+#calculate:hover{
+    background-color: rgb(61, 177, 57);
+    color: gold;
 }
 
 
