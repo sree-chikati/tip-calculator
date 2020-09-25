@@ -32,6 +32,9 @@ div{
     justify-content: center;
     align-content: center;
 }
+#bill, #tip, #people{
+    text-align: center;
+}
 
 #final{
     flex-direction: column;
