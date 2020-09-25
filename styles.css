@@ -20,7 +20,21 @@ div{
     align-content: center;
 }
 
-.final{
+#final{
     background-color: cornflowerblue;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
 }
+
+#calculate{
+    
+    background-color: rgb(255, 243, 75);
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+
 

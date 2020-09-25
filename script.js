@@ -5,11 +5,13 @@ const peopleTip = document.querySelector('#people-tip')
 const billInput = document.querySelector('#bill')
 const tipInput = document.querySelector('#tip')
 const peopleInput = document.querySelector('#people')
-
+const finalDiv = document.querySelector('#final')
+const calculateButton = document.querySelector('#calculate')
 
 billInput.addEventListener('input', handleBill)
 tipInput.addEventListener('input', handleBill)
 peopleInput.addEventListener('input', handleBill)
+calculateButton.addEventListener('click', handleCalculate)
 
 function handleBill() {
     const billValue = billInput.value
@@ -27,4 +29,11 @@ function handleBill() {
     peopleTip.innerHTML = tipPeople
 
 }
+
+function handleCalculate() {
+    finalDiv.style.display = "block"
+    handleBill()
+}
+
+
 
