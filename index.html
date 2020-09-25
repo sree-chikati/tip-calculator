@@ -8,32 +8,35 @@
 
     <main>
         <h1>Tip Calculator</h1>
-        <div class = "bill-amount">
-            <div>Bill amount: $</div>
-            <input id="bill" 
-            value="10.00" 
-            type = "number"
-            class = "bill-amount"> 
-        </div>
-        <br>
+        <div id = ammount>
+             <div class = "bill-amount">
+                <div>Bill amount: $</div>
+                <input id="bill" 
+                value="10.00" 
+                type = "number"
+                class = "bill-amount"> 
+            </div>
+            <br>
 
-        <div class = "tip-amount">
-            <div>Tip Percentage: </div>
-            <input id="tip"
-            value="15"
-            type = "number"
-            class = "tip-amount">
-            <div>%</div>
-        </div>
-        <br>
+            <div class = "tip-amount">
+                <div>Tip Percentage: </div>
+                <input id="tip"
+                value="15"
+                type = "number"
+                class = "tip-amount">
+                <div>%</div>
+            </div>
+            <br>
 
-        <div class = num-people>
-            <div>Number of People: </div>
-            <input id="people"
-            value="2"
-            type = "number"
-            class = "num-people">
+            <div class = num-people>
+                <div>Number of People: </div>
+                <input id="people"
+                value="2"
+                type = "number"
+                class = "num-people">
+            </div>
         </div>
+       
         <br>
 
         <input type="button" id="calculate" value="Calculate" onclick="handleBill()">
